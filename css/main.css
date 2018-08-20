@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+/* @font-face {
+    font-family: Untitled;
+    src: url("https://github.com/Aisyt/Untitledfont/blob/master/UntitledSerif-Regular.ttf") format('truetype');
+
+} */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+  /*   -moz-box-sizing: border-box; Firefox */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+*:link, *:visited {
+    color: #003630;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+  background-color: #F2F5F2;
+  font-size: 18px;
+  color: #003630;
+ /* font-family: Untitled; */
+  line-height: 1.5;
+}
+
+header {
+    padding-left: 3em;
+    padding-right: 3em;
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    right: 0;
+
+}
+
+h1 {
+    font-size: 1.6em;
+    font-family: Barlow;
+    border-bottom: 4px solid #FF7B7B;
+    text-transform: uppercase;
+}
+
+nav {
+    margin-left: auto;
+    display: none;
+}
+
+.container-hero {
+    max-width: 70%;
+    margin: 3em auto 0;
+    text-align: left;
+
+}
+
+.hero {
+    display: grid;
+    align-items: center;
+    height: 45em;
+    background: url(../img/beethoven.png);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    margin-bottom: 15vh;
+    position: relative;
+}
+
+.container-hero div {
+    margin-top: 0;
+    align-items: center;
+
+}
+
+.hero > .section-left {
+    align-self: center;
+    margin-top: -75%;
+    font-family: Barlow;
+    line-height: 1;
+    margin-left: 8vw;
+}
+
+.hero-p {
+    font-size: 1.7em;
+    margin-bottom: .5em;
+}
+
+.hero-title {
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3em;
+  
+}
+
+.line {
+    height: 2.6em;
+    width: 2px;
+    background: #003630;
+    left: 3em;
+    bottom: 2em;
+    position: absolute;
+    opacity: .8;
+}
+
+.container {
+  text-align: left;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.container  h3 {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  text-align: center;
+  font-size: 64px;
+  font-family: Barlow;
+}
+
+.container h3::after {
+  content: "";
+  display: block;
+  width: .7em;
+  height: 8px;
+  background-color: #003630;
+  margin: 0 auto;
+}
+
+.section-left, .section-right, h3 {
+    margin-top: 3em;
+}
+
+.section-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.section-right {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.quotation {
+    display: block;
+
+}
+
+h4 {
+   font-size: 1.5em;
+   font-family: Barlow;
+   border-bottom: 2px solid #003630;
+   padding-bottom: .3em;
+   width: 50%;
+
+}
+
+h4::after {
+
+    content: "";
+    display: absolute;
+    width: 30%;
+    height: 4px;
+    background: #F31212;
+    top: 10px;
+    position: relative;
+    left: 0;
+    margin: 0;
+    display: block;
+
+}
+
+.composition-list {
+    margin-top: 2em;
+}
+
+.composition-list a {
+    font-size: 1.5em;
+    font-family: Barlow;
+    cursor: pointer;
+    position: relative;
+}
+
+.composition-list li {
+    margin-top: 1em;
+}
+
+.composition-list a::before {
+    content: '';
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
+    background-color: #F31212;
+}
+
+.composition-list a:hover::before, .composition-list a:active::before, .composition-list a:focus::before {
+    height: 50%;
+}
+
+.longText{
+    width: 100%;
+    height: 200px;
+    margin-top: 4em;
+}
+
+#hidingScrollBar{
+    overflow: hidden;
+ 
+}
+
+.hideScrollBar {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-right: 14px;
+    padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+  /*  padding-bottom: 15px; This would hide the scroll bar of the bottom if there is one, (*update: it pushes text to bottom)*/
+    box-sizing: content-box;
+
+}
+
+.compositions > .section-left {
+    padding-top: 1.3em;
+}
+
+footer {
+    text-align: center;
+    margin: 8em auto;
+}
+
+footer > a {
+    font-size: 5em;
+    font-family: Barlow;
+    border-bottom: 4px solid #003630;
+    text-transform: uppercase;
+    transition: opacity 0.5s;
+}
+
+footer > a:hover {
+    opacity: .7;
+}
+
+footer p {
+    margin-top: 4em;
+    font-family: Barlow;
+    font-size: 1em;
+}
+
+.profile-link {
+    transition: opacity 0.5s;
+    border-bottom: 1px solid #003630;
+}
+
+.profile-link:hover {
+    opacity: .7;
+}
+
+
+
+
+
+/* ??? 740 --> 960px ??? */
+@media only screen and (max-width: 740px) {
+  
+  section {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+}
