@@ -293,9 +293,35 @@ footer p {
     opacity: .7;
 }
 
+@media only screen and (max-width: 450px) {
+    .hero-title {
+        font-size: 3em !important;
+    }
+}
 
 
+@media only screen and (max-width: 600px) {
 
+    .hero {
+        background: none;
+        height: unset;
+    }
+
+    .hero > .section-left {
+        padding-left: 3em;
+    }
+    
+    .hero-title {
+        font-size: 4em;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .composition-list a:hover::before, .composition-list a:active::before, .composition-list a:focus::before {
+        height: 0;
+    }
+}
 
 /* ??? 740 --> 960px ??? */
 @media only screen and (max-width: 940px) {
@@ -318,7 +344,13 @@ footer p {
         padding-left: 3em;
     }
 
+    
+    header {
+        padding-left: 3em !important;
+    }
+
 }
+
 
 @media only screen and (max-width: 1535px) {
 
@@ -359,6 +391,14 @@ footer p {
         font-family: Barlow;
         line-height: 1;
         margin-left: 0;
+    }
+
+    header {
+        padding-left: 0;
+    }
+
+    footer > a {
+        font-size: 3em !important;
     }
 
 }
