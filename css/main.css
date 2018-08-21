@@ -297,6 +297,14 @@ footer p {
     .hero-title {
         font-size: 3em !important;
     }
+
+    footer > a {
+        font-size: .7em !important;
+    }
+    
+    footer {
+        padding: 0 1em;
+    }
 }
 
 
