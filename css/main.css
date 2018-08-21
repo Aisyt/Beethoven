@@ -315,6 +315,14 @@ footer p {
         font-size: 4em;
     }
 
+    footer > a {
+        font-size: 1em !important;
+    }
+    
+    footer {
+        padding: 0 1em;
+    }
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -347,6 +355,10 @@ footer p {
     
     header {
         padding-left: 3em !important;
+    }
+
+    footer > a {
+        font-size: 2em !important;
     }
 
 }
@@ -398,7 +410,7 @@ footer p {
     }
 
     footer > a {
-        font-size: 3em !important;
+        font-size: 3em;
     }
 
 }
