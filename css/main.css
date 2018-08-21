@@ -294,8 +294,12 @@ footer p {
 }
 
 @media only screen and (max-width: 450px) {
+    .hero-p {
+        font-size: 18px;
+    }
+
     .hero-title {
-        font-size: 3em !important;
+        font-size: 45px;
     }
 
     footer > a {
@@ -329,6 +333,14 @@ footer p {
     
     footer {
         padding: 0 3em;
+    }
+
+    .hero-p {
+        font-size: 18px;
+    }
+
+    .hero-title {
+        font-size: 45px;
     }
 
 }
