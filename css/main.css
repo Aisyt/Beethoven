@@ -295,11 +295,12 @@ footer p {
 
 @media only screen and (max-width: 450px) {
     .hero-p {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .hero-title {
-        font-size: 25px;
+        font-size: 35px;
+        padding-right: 1em;
     }
 
     footer > a {
@@ -336,11 +337,12 @@ footer p {
     }
 
     .hero-p {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .hero-title {
-        font-size: 25px;
+        font-size: 35px;
+        padding-right: 1em;
     }
 
 }
