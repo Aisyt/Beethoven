@@ -172,14 +172,16 @@ section {
 }
 
 h4 {
-   font-size: 1.5em;
+   font-size: 2.5em;
    font-family: Barlow;
-   border-bottom: 2px solid #003630;
+   text-align: center;
+   margin-bottom: 1em;
+ /*  border-bottom: 2px solid #003630;
    padding-bottom: .3em;
-   width: 50%;
+   width: 50%; */
 
 }
-
+/*
 h4::after {
 
     content: "";
@@ -193,7 +195,7 @@ h4::after {
     margin: 0;
     display: block;
 
-}
+} */
 
 .composition-list {
     margin-top: 2em;
@@ -226,6 +228,13 @@ h4::after {
     height: 50%;
 }
 
+.composition-images img {
+    margin-top: 3em;
+    margin-left: -2em;
+}
+
+/*
+
 .longText{
     width: 100%;
     height: 200px;
@@ -242,11 +251,11 @@ h4::after {
     height: 100%;
     overflow: auto;
     margin-right: 14px;
-    padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
-  /*  padding-bottom: 15px; This would hide the scroll bar of the bottom if there is one, (*update: it pushes text to bottom)*/
+    padding-right: 28px; This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value
+    padding-bottom: 15px; This would hide the scroll bar of the bottom if there is one, (*update: it pushes text to bottom)
     box-sizing: content-box;
 
-}
+} */
 
 .compositions > .section-left {
     padding-top: 1.3em;
@@ -289,11 +298,67 @@ footer p {
 
 
 /* ??? 740 --> 960px ??? */
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 940px) {
   
-  section {
-    display: flex !important;
-    flex-direction: column;
-  }
+    section {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .container-hero, header, .container {
+        max-width: 100%;
+    }
+
+    .composition-p {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero > .section-left {
+        padding-left: 3em;
+    }
+
+}
+
+@media only screen and (max-width: 1535px) {
+
+    section {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .composition-images img {
+        margin-top: 3em;
+        margin-left: 0;
+    }
+
+    .composition-list {
+        text-align: center;
+    }
+
+    .composition-p {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .about > .section-right {
+        margin-top: 1.5em;
+    }
+
+    section > h3 {
+        margin-top: 1em;
+    }
+
+    .hero > .section-left {
+        align-self: center;
+        margin-top: 40%;
+        font-family: Barlow;
+        line-height: 1;
+        margin-left: 0;
+    }
 
 }
