@@ -299,7 +299,7 @@ footer p {
     }
 
     footer > a {
-        font-size: .7em !important;
+        font-size: 36px !important;
     }
     
     footer {
@@ -324,7 +324,7 @@ footer p {
     }
 
     footer > a {
-        font-size: 1em !important;
+        font-size: 36px !important;
     }
     
     footer {
@@ -366,7 +366,7 @@ footer p {
     }
 
     footer > a {
-        font-size: 2em !important;
+        font-size: 36px !important;
     }
 
 }
