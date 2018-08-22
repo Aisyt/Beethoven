@@ -156,6 +156,8 @@ section {
     margin-top: 3em;
 }
 
+
+
 .section-left {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
@@ -166,6 +168,7 @@ section {
   grid-row: 2 / 3;
 }
 
+
 .quotation {
     display: block;
 
@@ -174,8 +177,8 @@ section {
 h4 {
    font-size: 2.5em;
    font-family: Barlow;
-   text-align: center;
-   margin-bottom: 1em;
+   text-align: left;
+   margin-bottom: .5em;
  /*  border-bottom: 2px solid #003630;
    padding-bottom: .3em;
    width: 50%; */
@@ -229,8 +232,12 @@ h4::after {
 }
 
 .composition-images img {
-    margin-top: 3em;
     margin-left: -2em;
+    margin-top: 40px;
+}
+
+.compositions > .section-left {
+    margin-top: 0;
 }
 
 /*
@@ -256,10 +263,6 @@ h4::after {
     box-sizing: content-box;
 
 } */
-
-.compositions > .section-left {
-    padding-top: 1.3em;
-}
 
 footer {
     text-align: center;
@@ -295,12 +298,11 @@ footer p {
 
 @media only screen and (max-width: 450px) {
     .hero-p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .hero-title {
-        font-size: 35px;
-        padding-right: 1em;
+        font-size: 45px;
     }
 
     footer > a {
@@ -337,12 +339,11 @@ footer p {
     }
 
     .hero-p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .hero-title {
-        font-size: 35px;
-        padding-right: 1em;
+        font-size: 45px;
     }
 
 }
@@ -383,6 +384,10 @@ footer p {
         font-size: 36px !important;
     }
 
+    .hero {
+        margin-bottom: 6vh;
+    }
+
 }
 
 
@@ -403,7 +408,7 @@ footer p {
     }
 
     .composition-p {
-        max-width: 80%;
+       /* max-width: 80%; */
         margin: 0 auto;
     }
 
@@ -421,7 +426,7 @@ footer p {
 
     .hero > .section-left {
         align-self: center;
-        margin-top: 40%;
+        margin-top: 18%;
         font-family: Barlow;
         line-height: 1;
         margin-left: 0;
@@ -435,4 +440,33 @@ footer p {
         font-size: 3em;
     }
 
+}
+
+
+audio:hover, audio:focus, audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow: 2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+    width: 75%;
+    margin: 4em auto 0;
+}
+
+.flex {
+    display: flex;
 }
