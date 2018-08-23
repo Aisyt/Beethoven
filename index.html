@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
+
+
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
     <title>Tribute: Ludwig Van Beethoven</title>
+   
 </head>
 <body>
     <header>
@@ -63,11 +66,17 @@
                     <li><a>5. Piano Sonata 29 Hammerklavier Movement 3</a></li>
                 </ul>-->
                 <div class="flex"><audio id="youtube" controls loop></audio></div>
-                <div class="composition-images">
-                    <ul>
-                        <li><img src="img/FurElise/furelise1.png"></li>
-                    </ul>
-                </div>
+                <div id="content">
+                    <div id="featured_img">
+                      <img id="img" src="img/FurElise/furelise1.png">
+                    </div>
+                    <div id="thumb_img" class="cf">
+                      <img class="active" src="img/FurElise/furelise1.png" onclick="changeimg('img/FurElise/furelise1.png',this);">
+                      <img src="img/FurElise/furelise2.png" onclick="changeimg('img/FurElise/furelise2.png',this);">
+                      <img src="img/FurElise/furelise3.png" onclick="changeimg('img/FurElise/furelise3.png',this);">
+                  <img src="img/FurElise/furelise4.png" onclick="changeimg('img/FurElise/furelise4.png',this);">
+                    </div>
+                  </div>
             </div>
             <div class="section-right">
                 <h4>Fur Elise</h4>
@@ -81,5 +90,16 @@
         <a href="https://en.wikipedia.org/wiki/Ludwig_van_Beethoven">Read more at wikipedia.com</a>
         <p>Written and coded for the Beethoven by <a class="profile-link" href="https://github.com/Aisyt">Aisyt</a></p>
     </footer>
+    <script>
+    function changeimg(url,e) {
+        document.getElementById("img").src = url;
+        var nodes = document.getElementById("thumb_img");
+        var img_child = nodes.children;
+        for (i = 0; i < img_child.length; i++) {
+          img_child[i].classList.remove('active')
+        }
+        e.classList.add('active');
+      }
+    </script>
 </body>
 </html>
